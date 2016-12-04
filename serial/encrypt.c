@@ -26,6 +26,7 @@ FILE* open_file(char* filename) {
     return fp;
 }
 
+//This method closes the opened file
 void close_file(FILE* fp) {
     fclose(fp);
 }
