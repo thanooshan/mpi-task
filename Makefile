@@ -15,7 +15,8 @@
 # - Sarah Mount, September 2014
 #
 
-SUBDIRS = serial
+# It will run 'mpi' folder makefile by default
+SUBDIRS = serial mpi
 
 all:
 	@for dir in $(SUBDIRS); \
