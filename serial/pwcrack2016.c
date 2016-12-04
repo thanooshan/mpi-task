@@ -24,7 +24,7 @@ const int ENCRYPTED_SIZE = 94;
 
 void decrypt_password(int, char*, char**);
 
-
+//This function returns decrypted passwords
 void decrypt_password(const int password_length, char* password, char** plain) {
     int possibilties = pow(ALPHABET_SIZE, password_length);
     char candidates[possibilties][password_length + 1];
