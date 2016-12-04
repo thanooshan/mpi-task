@@ -43,6 +43,7 @@ void read_line_in_file(FILE* fp, char** line) {
     }
 }
 
+//This method returns a printable ASCII string which starts with another salt.
 char* encrypt_string(char* password) {
     return crypt(password, SALT);
 }
